@@ -1,4 +1,4 @@
-﻿namespace GeekShopping.FrontEnd.Models;
+﻿namespace GeekShopping.FrontEnd.Models
 {
     public class ProductModel
     {

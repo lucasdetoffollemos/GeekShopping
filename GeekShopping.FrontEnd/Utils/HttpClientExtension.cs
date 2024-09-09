@@ -11,17 +11,22 @@ namespace GeekShopping.FrontEnd.Utils
         {
             if (!response.IsSuccessStatusCode)
                 throw new ApplicationException($"Something went wrong, calling api: {response.ReasonPhrase}");
-            
+
             var dataAsString = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
 
-            return JsonSerializer.Deserialize<T>(dataAsString, 
-                new JsonSerializerOptions { PropertyNameCaseInsensitive = true});
-         
+            if (response.Content.Headers.ContentType.ToString().Contains("application/json"))
+            {
+                return JsonSerializer.Deserialize<T>(dataAsString,
+            new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+            }
+
+            return (T)(object)dataAsString;
+
         }
 
         public static Task<HttpResponseMessage> PostAsJson<T>(this HttpClient httpClient, string url, T data)
         {
-            var dataAsJsonString = JsonSerializer.Serialize(data); 
+            var dataAsJsonString = JsonSerializer.Serialize(data);
 
             var content = new StringContent(dataAsJsonString);
             content.Headers.ContentType = contentType;

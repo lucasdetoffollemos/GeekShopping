@@ -6,4 +6,57 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Include="wwwroot\lib\cldrjs\dist\.build\build.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\lib\cldrjs\dist\.build\.dist_jshintrc" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\.jshintrc" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\build\intro.min.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\build\intro_core.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\build\intro_event.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\build\intro_supplemental.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\build\intro_unresolved.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\build\node_main.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\build\outro.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\bundle\lookup.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\bundle\lookup.js.orig" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\bundle\parent_lookup.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\cldr.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\cldr_event.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\cldr_supplemental.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\cldr_unresolved.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\common\create_error.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\common\validate.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\common\validate\presence.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\common\validate\type.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\common\validate\type\function.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\common\validate\type\path.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\common\validate\type\plain_object.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\common\validate\type\string.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\core.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\core\likely_subtags.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\core\load.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\core\remove_likely_subtags.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\core\set_available_bundles.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\core\subtags.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\event.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\item\get_resolved.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\item\lookup.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\path\normalize.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\resource\get.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\resource\set.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\supplemental.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\supplemental\main.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\unresolved.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\util\always_array.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\util\array\for_each.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\util\array\is_array.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\util\array\some.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\util\is_plain_object.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\util\json\merge.js" />
+    <None Include="wwwroot\lib\cldrjs\dist\.build\util\object\keys.js" />
+  </ItemGroup>
+
 </Project>
